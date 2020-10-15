@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    background: linear-gradient(rgb(0, 0, 3), rgba(11, 87, 138, 0.849), rgb(105, 170, 231));
+}
+
