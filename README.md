@@ -25,6 +25,11 @@
 black backgound. The planets' bright colours stands out from their black background and this contrast 
 allows the user easily grasp and retain the object from the card.
 -   Back face cards display an unique image of space with lights on the background
+### Music and sounds
+-   Background music is set at 50% volume so that the user can hear the game commands sounds 
+(click on card, match cards, game over and victory)
+-   The chosen sounds are also set at a confortable volume in order not to upset the User Experience
+-   Background music has a pleasant energizing tone and rythm
 ## Wireframes
 # Features
 -   The game offers a large amount of features:
