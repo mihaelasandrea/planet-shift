@@ -9,13 +9,47 @@ html{
 body{
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
-    background: linear-gradient(rgb(0, 0, 3), rgba(11, 87, 138, 0.849), rgb(105, 170, 231));
+    background: linear-gradient(#000003, #0b578ad8, #69aae7);
 }
 
 .game-title{
-    color: wheat;
+    color: #4c4e57;
     font-weight: bold;
     text-align: center;
-    font-size: 11vw;
-    letter-spacing: 7px;
+    font-size: 3em;
+    letter-spacing: 6px;
+}
+
+.features{
+    color: #b9bdd1;
+    font-size: 2em;
+}
+
+.game-info{
+    color: #e3e6f8;
+    font-size: 2em;
+    display: inline;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2px;
+    margin: 50px;
+    justify-content: center;
+
+}
+
+.card {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn{
+    
 }
