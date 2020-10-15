@@ -9,11 +9,11 @@ html{
 body{
     font-family: 'Share Tech Mono', monospace;
     margin: 0;
-    background: linear-gradient(#000003, #0b578ad8, #69aae7);
+    background: linear-gradient(#000000, #0f73b6d8);
 }
 
 .game-title{
-    color: #4c4e57;
+    color: #4a4b4e;
     font-weight: bold;
     text-align: center;
     font-size: 3em;
@@ -21,23 +21,30 @@ body{
 }
 
 .features{
-    color: #b9bdd1;
+    color: #848797;
     font-size: 2em;
 }
 
+.commands{
+    display: inline;
+}
+
 .game-info{
-    color: #e3e6f8;
+    color: #cdcfdd;
     font-size: 2em;
     display: inline;
+}
+
+.game-info-container{
+    margin-top: 2em;
 }
 
 .game-container{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 2px;
-    margin: 50px;
+    margin: 10px 50px;
     justify-content: center;
-
 }
 
 .card {
@@ -58,8 +65,22 @@ body{
     text-align: center;
 }
 
-.btn{
+button{
+background-color: #316481; /* Green */
+  border: none;
+  color: rgb(21, 30, 34);
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 1em;
+}
 
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(218, 231, 250, 0.24), 0 17px 50px 0 rgba(236, 238, 240, 0.19);
 }
 
 img {
