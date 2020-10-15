@@ -10,7 +10,32 @@
 <title>Planet Shift</title>
 </head>
 <body>
-
+    <article class="container">
+        <h1 class="game-title">Planet shift</h1>
+        <div class="game-container">
+            <div class="difficulty">
+                <div class="difficulty-beginner">Difficulty BEGINNER</div>
+                <div class="difficulty-advanced">Difficulty ADVANCED</div>
+            </div>
+            <div class="commands">
+                <button id="start">Start Game</button>
+                <button id="restart">Restart Game</button>
+                <button id="music-mute">Mute</button>
+                <button id="music-unmute">Unmute</button>
+            </div>
+            <div class="game-info-container">
+                <div class="game-info">
+                    Shifts<span id="shifts">0</span>
+                </div>
+                <div class="game-info">
+                    Time<span id="time-remaining-beginner">100</span>
+                </div>
+                <div class="game-info">
+                    Time<span id="time-remaining-advanced">50</span>
+                </div>
+            </div>
+        </div>
+    </article>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
