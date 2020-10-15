@@ -41,15 +41,17 @@ body{
 }
 
 .card {
-    background-color: black;
+    background-image: url("assets/images/space.jpg");
     height: 100px;
     width: 100px;
+    background-color: black;
 }
+
 
 .container {
     text-align: center;
 }
 
 .btn{
-    
+
 }
