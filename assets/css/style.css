@@ -12,3 +12,10 @@ body{
     background: linear-gradient(rgb(0, 0, 3), rgba(11, 87, 138, 0.849), rgb(105, 170, 231));
 }
 
+.game-title{
+    color: wheat;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11vw;
+    letter-spacing: 7px;
+}
