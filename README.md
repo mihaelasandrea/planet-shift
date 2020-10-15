@@ -1,43 +1,45 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome USER_NAME,
+<p> This is a memory game created with the scope of having 
+    fun when taking a break from working, learning, etc. The strategy was to create a 
+    game for the user to relax in a toning way for the mind. Memory-games are known to
+    both entertain and exercise the main functions of the brain at all ages.
+</p>
+<p>
+    The chosen theme is Universum, specifically planets from our Solar System. 
+    The reason behind this theme choice is the fact that the subject related to space 
+    and time infinity usually doesn't trigger negative emotions for people, but on the
+     contrary, it gives them a feeling of trust and relief and helps to disconnect from the 
+     daily routine.
+</p>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+# User Experience
+## User Stories
+## Design
+### Color Scheme
+-   The colour palette for the game is gradient blue set vertically starting from top black/dark-blue going lighter towards bottom
+### Typography
+-   Share Tech Mono or 
+-   terminator-cyr-font-f756 from fontspace
+### Imagery
+-   Front face cards display images of different planets from our solar system on a square 
+black backgound. The planets' bright colours stands out from their black background and this contrast 
+allows the user easily grasp and retain the object from the card.
+-   Back face cards display an unique image of space with lights on the background
+## Wireframes
+# Features
+-   The game offers a large amount of features:
+    -   It's responsive on different device sizes
+    -   contain interactive elements such as:
+        -   background music which plays by default and can be muted by option
+        -   different sounds for each interactive user command: when click on card, match cards, game 
+        over and victory
+        -   shows number of flips named in the game "shifts" in order to keep continuity with the game name "Planet Shift"
+        -   shows remaining time
+        -   the user can choose from beginner (60 seconds remaining time) or advanced level (100 seconds remaining time)
+        -   while playing the user can restart the game at any time
+        -   for each game restart cards are shuffled
+# Technologies Used
+# Frameworks, Libraries & Programs Used
+# Testing
+# Deployment
+# Credits
