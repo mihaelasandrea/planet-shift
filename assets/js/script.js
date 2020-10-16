@@ -42,14 +42,29 @@ class PlanetShift {
         this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
     }
+
     startGame() {
          this.cardToCheck = null;
          this.totalClicks = 0;
          this.timeRemaining = this.totalTime;
          this.matchedCards = [];
          this.busy = true;
+         setTimeout(() => {
+             this.audioController.startMusic();
+             this.shuffleCards();
+             this.countdown = this.startCountdown();
+             this.busy = false;
+         }, 500);
+         this.hideCards();
+         this.timer.innerText = timeRemaining;
+         this.ticker.innerText = this.totalClicks;
+    }
 
-         setTimeout()
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove("visible");
+            card.classList.remove("matched");
+        });
     }
 
     flipCard(card) {
@@ -80,7 +95,8 @@ class PlanetShift {
 function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-    let game = new PlanetShift(100, cards)
+    let game = new PlanetShift(100, cards);
+
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
             overlay.classList.remove("visible");
@@ -90,7 +106,7 @@ function ready(){
 
     cards.forEach(card => {
         card.addEventListener("click", () => {
-            game.flipCard();
+            game.flipCard(card);
         });
     });
 };
