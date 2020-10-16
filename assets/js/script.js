@@ -37,8 +37,7 @@ class PlanetShift {
         this.cardsArray = cards;
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById("time-remaining-beginner");
-        this.timer = document.getElementById("time-remaining-advanced");
+        this.timer = document.getElementById("time-remaining");
         this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
     }
@@ -51,12 +50,12 @@ class PlanetShift {
          this.busy = true;
          setTimeout(() => {
              this.audioController.startMusic();
-             this.shuffleCards();
+             this.shuffleCards(this.cardsArray);
              this.countdown = this.startCountdown();
              this.busy = false;
          }, 500);
          this.hideCards();
-         this.timer.innerText = timeRemaining;
+         this.timer.innerText = this.timeRemaining;
          this.ticker.innerText = this.totalClicks;
     }
 
@@ -78,6 +77,21 @@ class PlanetShift {
         }
     }
 
+    startCountdown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+            this.gameOver();
+        }, 1000);
+    }
+
+    gameOver() {
+        clearInterval(this.countdown);
+        this.audioController.gameOver();
+        document.getElementById("game-over-text").classList.add("visible");
+    }
+
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
             let randIndex = Math.floor(Math.random() * (i+1));
@@ -92,7 +106,16 @@ class PlanetShift {
     }
 }
 
-function ready(){
+
+if(document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready());
+} else {
+    ready();
+}
+
+ //let audioController = new AudioController();
+
+ function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
     let game = new PlanetShift(100, cards);
@@ -110,11 +133,3 @@ function ready(){
         });
     });
 };
-
-if(document.readyState == "loading") {
-    document.addEventListener("DOMContentLoaded", ready());
-} else {
-    ready();
-}
-
- //let audioController = new AudioController();
