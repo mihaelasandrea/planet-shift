@@ -73,7 +73,10 @@ class PlanetShift {
             this.ticker.innerText = this.totalClicks;
             card.classList.add("visible");
 
-            //if statement
+            if(this.cardToCheck)
+                this.checkForCardMatch(card);
+            else 
+                this.cardToCheck = card;
         }
     }
 
