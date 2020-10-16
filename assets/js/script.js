@@ -158,7 +158,7 @@ if(document.readyState == "loading") {
  function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-    let game = new PlanetShift(100, cards);
+    let game = new PlanetShift(60, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
