@@ -49,7 +49,7 @@ class PlanetShift {
          this.matchedCards = [];
          this.busy = true;
 
-         this.shuffleCards();
+         setTimeout()
     }
 
     flipCard(card) {
