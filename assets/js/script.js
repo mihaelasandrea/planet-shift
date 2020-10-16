@@ -49,6 +49,10 @@ class PlanetShift {
          this.matchedCards = [];
          this.busy = true;
     }
+
+    canFlipCard(card) {
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    }
 }
 
 function ready(){
