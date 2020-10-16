@@ -32,6 +32,25 @@ class AudioController {
     }
 }  
 
+class PlanetShift {
+    constructor(totalTime, cards) {
+        this.cardsArray = cards;
+        this.totalTime = totalTime;
+        this.timeRemaining = totalTime;
+        this.timer = document.getElementById("time-remaining-beginner");
+        this.timer = document.getElementById("time-remaining-advanced");
+        this.ticker = document.getElementById("shifts");
+        this.audioController = new AudioController();
+    }
+    startGame() {
+         this.cardToCheck = null;
+         this.totalClicks = 0;
+         this.timeRemaining = this.totalTime;
+         this.matchedCards = [];
+         this.busy = true;
+    }
+}
+
 function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
