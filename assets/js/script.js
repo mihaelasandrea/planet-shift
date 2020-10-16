@@ -125,12 +125,14 @@ class PlanetShift {
         clearInterval(this.countdown);
         this.audioController.gameOver();
         document.getElementById("game-over-text").classList.add("visible");
+        this.hideCards();
     }
 
     victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
         document.getElementById("victory-text").classList.add("visible");
+        this.hideCards();
     }
 
     shuffleCards() {
