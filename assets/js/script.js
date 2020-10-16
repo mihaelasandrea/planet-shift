@@ -80,6 +80,31 @@ class PlanetShift {
         }
     }
 
+    checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck)
+        else 
+            cardMisMatch(card, this.cardToCheck);
+    }
+
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        card1.classList.add("matched");
+        card2.classList.add("matched");
+        this.audioController.match();
+        if(this.matchedCards.length === this.cardsArray);
+            this.victory();
+    }
+
+    cardMisMatch(card) {
+
+    }
+
+    getCardType(card) {
+        return card.getElementsByClassName("card-value")[0].src;
+    }
+
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
