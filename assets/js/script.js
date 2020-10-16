@@ -82,9 +82,11 @@ class PlanetShift {
 
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
-            this.cardMatch(card, this.cardToCheck)
+            this.cardMatch(card, this.cardToCheck);
         else 
-            cardMisMatch(card, this.cardToCheck);
+            this.cardMisMatch(card, this.cardToCheck);
+
+        this.cardToCheck = null;
     }
 
     cardMatch(card1, card2) {
@@ -93,12 +95,17 @@ class PlanetShift {
         card1.classList.add("matched");
         card2.classList.add("matched");
         this.audioController.match();
-        if(this.matchedCards.length === this.cardsArray);
+        if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
 
-    cardMisMatch(card) {
-
+    cardMisMatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove("visible");
+            card2.classList.remove("visible");
+            this.busy = false;
+        }, 1000);
     }
 
     getCardType(card) {
@@ -135,8 +142,7 @@ class PlanetShift {
     }
 
     canFlipCard(card) {
-        return true;
-        //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
