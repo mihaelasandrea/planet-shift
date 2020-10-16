@@ -39,7 +39,7 @@ class PlanetShift {
         this.timeRemaining = totalTime;
         this.timer = document.getElementById("time-remaining-beginner");
         this.timer = document.getElementById("time-remaining-advanced");
-        this.ticker = document.getElementById("shifts");
+        this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
     }
     startGame() {
@@ -50,25 +50,35 @@ class PlanetShift {
          this.busy = true;
     }
 
+    flipCard(card) {
+        if(this.canFlipCard(card)) {
+            this.audioController.flip();
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add("visible");
+        }
+    }
+
     canFlipCard(card) {
-        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return true;
+        //return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
 function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-
+    let game = new PlanetShift(100, cards)
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
             overlay.classList.remove("visible");
-            //game.startGame();
+            game.startGame();
         });
     });
 
     cards.forEach(card => {
         card.addEventListener("click", () => {
-            //game.flipCard();
+            game.flipCard();
         });
     });
 };
@@ -79,4 +89,4 @@ if(document.readyState == "loading") {
     ready();
 }
 
- let audioController = new AudioController();
+ //let audioController = new AudioController();
