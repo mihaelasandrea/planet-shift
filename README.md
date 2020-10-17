@@ -5,7 +5,7 @@
     both entertain and exercise the main functions of the brain at all ages.
 </p>
 <p>
-    The chosen theme is Universum, specifically planets from our Solar System. 
+    The chosen theme is Astro-space, specifically planets from our Solar System. 
     The reason behind this theme choice is the fact that the subject related to space 
     and time infinity usually doesn't trigger negative emotions for people, but on the
      contrary, it gives them a feeling of trust and relief and helps to disconnect from the 
@@ -16,7 +16,8 @@
 ## User Stories
 ## Design
 ### Color Scheme
--   The colour palette for the game is gradient blue set vertically starting from top black/dark-blue going lighter towards bottom
+-   The colour palette for the game is gradient blue set vertically starting 
+from top black/dark-blue going lighter towards bottom
 ### Typography
 -   Share Tech Mono or 
 -   terminator-cyr-font-f756 from fontspace
@@ -48,3 +49,15 @@ allows the user easily grasp and retain the object from the card.
 # Testing
 # Deployment
 # Credits
+## Audio
+## Images
+## Tutorials
+<p>My personal scope of creating this memory game was learning how to juggle with javascript function
+    and to better undestand the applicability of the powerfull tools that this intricate programming language
+    has to offer. I have to admit that I have understood a big deal of logical javascript behaviour while 
+    following these tutorials. They offered me big support during the creation of this project.</p>
+
+-   I have taken inspiration as for the structure of the memory game [here](https://www.youtube.com/watch?v=28VfzEiJgy4)
+-   I have followed the walkthrough tutorial for the game commands in javascript [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=395s)
+
+## Mentor
