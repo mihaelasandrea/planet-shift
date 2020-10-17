@@ -175,5 +175,4 @@ function ready(){
     });
 };
 
-//Code written by me
 
