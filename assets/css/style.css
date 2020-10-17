@@ -115,6 +115,7 @@ body {
 button {
     background-color: #316481;
     border: none;
+    outline: none;
     color: rgb(21, 30, 34);
     padding: 14px 40px;
     text-align: center;
