@@ -1,3 +1,5 @@
+//Code used from the walkthrough tutorial
+
 class AudioController {
     constructor() {
         this.bgMusic = new Audio("assets/audio/new-horizons.mp3");
@@ -148,16 +150,13 @@ class PlanetShift {
     }
 }
 
-
 if(document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
     ready();
 }
 
- //let audioController = new AudioController();
-
- function ready(){
+function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
     let game = new PlanetShift(60, cards);
@@ -175,3 +174,6 @@ if(document.readyState == "loading") {
         });
     });
 };
+
+//Code written by me
+
