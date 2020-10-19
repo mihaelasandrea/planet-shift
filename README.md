@@ -19,8 +19,7 @@
 -   The colour palette for the game is gradient blue set vertically starting 
 from top black/dark-blue going lighter towards bottom
 ### Typography
--   Share Tech Mono or 
--   terminator-cyr-font-f756 from fontspace
+-   Share Tech Mono
 ### Imagery
 -   Front face cards display images of different planets from our solar system on a square 
 black backgound. The planets' bright colours stands out from their black background and this contrast 
@@ -51,6 +50,16 @@ allows the user easily grasp and retain the object from the card.
 # Credits
 ## Audio
 ## Images
+-   callisto image source [here](https://commons.wikimedia.org/w/index.php?curid=45044)
+-   earth image source [here](https://commons.wikimedia.org/w/index.php?curid=43894484)
+-   ganymede image source [here](https://commons.wikimedia.org/w/index.php?curid=45819345)
+-   jupiter image source [here](https://commons.wikimedia.org/w/index.php?curid=32799232)
+-   neptune image source [here](https://commons.wikimedia.org/w/index.php?curid=82476611)
+-   osiris image source [here](https://commons.wikimedia.org/w/index.php?curid=56489423)
+-   titan image source [here](https://commons.wikimedia.org/w/index.php?curid=44822294)
+-   uranus image source [here](https://commons.wikimedia.org/w/index.php?curid=5649239)
+-   space image source [here](https://commons.wikimedia.org/w/index.php?curid=6756556)
+-   backround image dark space  source [here](https://wallpapersafari.com/w/4ncxJI)
 ## Tutorials
 <p>My personal scope of creating this memory game was learning how to juggle with javascript function
     and to better undestand the applicability of the powerfull tools that this intricate programming language
@@ -62,3 +71,5 @@ allows the user easily grasp and retain the object from the card.
 ## Other 
 -   Buttons style box-shadow taken from [here](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow2)
 ## Mentor
+## Tutors
+## Slack
