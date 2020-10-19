@@ -1,4 +1,4 @@
-
+[View the live game here](https://mihaelasandrea.github.io/planet-shift/)
 <p> This is a memory game created with the scope of having 
     fun when taking a break from working, learning, etc. The strategy was to create a 
     game for the user to relax in a toning way for the mind. Memory-games are known to
