@@ -61,10 +61,12 @@ class PlanetShift {
          this.matchedCards = [];
          this.busy = true;
          setTimeout(() => {
-             this.audioController.startMusic();
-             this.shuffleCards(this.cardsArray);
-             this.countdown = this.startCountdown();
-             this.busy = false;
+            this.audioController.startMusic();
+            this.audioController.enableMute();
+            this.audioController.disableMute();
+            this.shuffleCards(this.cardsArray);
+            this.countdown = this.startCountdown();
+            this.busy = false;
          }, 500);
          this.hideCards();
          this.timer.innerText = this.timeRemaining;
