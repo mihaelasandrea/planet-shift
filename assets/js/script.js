@@ -32,6 +32,16 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
+    enableMute() {
+        document.getElementById("mute").addEventListener("click", () => {
+           this.bgMusic.pause();
+        })
+    }
+    disableMute() {
+        document.getElementById("unmute").addEventListener("click", () => {
+            this.bgMusic.play();
+        });
+    }
 }  
 
 class PlanetShift {
