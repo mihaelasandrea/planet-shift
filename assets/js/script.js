@@ -18,16 +18,6 @@ class AudioController {
         this.bgMusic.pause();
         this.bgMusic.currentTime = 0;
     }
-    stopSounds() {
-        this.gameOverSound.pause();
-        this.gameOverSound.currentTime = 0;
-        this.flipSound.pause();
-        this.flipSound.currentTime = 0;
-        this.matchSound.pause();
-        this.matchSound.currentTime = 0;
-        this.victorySound.pause();
-        this.victorySound.currentTime = 0;
-    }
     flip() {
         this.flipSound.play();
     }
@@ -42,7 +32,7 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
-    enableMute() {
+    mute() {
         document.getElementById("mute").addEventListener("click", () => {
             this.gameOverSound.pause();
             this.flipSound.pause();
@@ -51,7 +41,7 @@ class AudioController {
             this.bgMusic.pause();
         })
     }
-    disableMute() {
+    unmute() {
         document.getElementById("unmute").addEventListener("click", () => {
             this.gameOverSound.play();
             this.flipSound.play();
@@ -73,23 +63,22 @@ class PlanetShift {
     }
 
     startGame() {
-         this.cardToCheck = null;
-         this.totalClicks = 0;
-         this.timeRemaining = this.totalTime;
-         this.matchedCards = [];
-         this.busy = true;
-         setTimeout(() => {
+        this.cardToCheck = null;
+        this.totalClicks = 0;
+        this.timeRemaining = this.totalTime;
+        this.matchedCards = [];
+        this.busy = true;
+        this.audioController.mute();
+        this.audioController.unmute();
+        setTimeout(() => {
             this.audioController.startMusic();
-            this.audioController.enableMute();
-            this.audioController.disableMute();
-            this.audioController.stopSounds();
             this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
          }, 500);
-         this.hideCards();
-         this.timer.innerText = this.timeRemaining;
-         this.ticker.innerText = this.totalClicks;
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
     }
 
     hideCards() {
@@ -157,6 +146,8 @@ class PlanetShift {
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
+        this.audioController.mute();
+        this.audioController.unmute();
         document.getElementById("game-over-text").classList.add("visible");
         this.hideCards();
     }
@@ -164,6 +155,8 @@ class PlanetShift {
     victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
+        this.audioController.mute();
+        this.audioController.unmute();
         document.getElementById("victory-text").classList.add("visible");
         this.hideCards();
     }
@@ -190,7 +183,7 @@ if(document.readyState == "loading") {
 function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-    let game = new PlanetShift(100, cards);
+    let game = new PlanetShift(5, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
