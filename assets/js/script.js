@@ -54,10 +54,10 @@ class AudioController {
     disableMute() {
         document.getElementById("unmute").addEventListener("click", () => {
             this.gameOverSound.play();
-            this.bgMusic.play();
             this.flipSound.play();
             this.matchSound.play();
             this.victorySound.play(); 
+            this.bgMusic.play();
         });
     }
 }  
