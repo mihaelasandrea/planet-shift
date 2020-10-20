@@ -35,11 +35,19 @@ class AudioController {
     enableMute() {
         document.getElementById("mute").addEventListener("click", () => {
            this.bgMusic.pause();
+           this.flipSound.pause();
+           this.matchSound.pause();
+           this.victorySound.pause();
+           this.gameOverSound.pause();
         })
     }
     disableMute() {
         document.getElementById("unmute").addEventListener("click", () => {
             this.bgMusic.play();
+            this.flipSound.play();
+            this.matchSound.play();
+            this.victorySound.play();
+            this.gameOverSound.play();
         });
     }
 }  
