@@ -18,6 +18,16 @@ class AudioController {
         this.bgMusic.pause();
         this.bgMusic.currentTime = 0;
     }
+    stopSounds() {
+        this.gameOverSound.pause();
+        this.gameOverSound.currentTime = 0;
+        this.flipSound.pause();
+        this.flipSound.currentTime = 0;
+        this.matchSound.pause();
+        this.matchSound.currentTime = 0;
+        this.victorySound.pause();
+        this.victorySound.currentTime = 0;
+    }
     flip() {
         this.flipSound.play();
     }
@@ -34,20 +44,20 @@ class AudioController {
     }
     enableMute() {
         document.getElementById("mute").addEventListener("click", () => {
-           this.bgMusic.pause();
-           this.flipSound.pause();
-           this.matchSound.pause();
-           this.victorySound.pause();
-           this.gameOverSound.pause();
+            this.gameOverSound.pause();
+            this.flipSound.pause();
+            this.matchSound.pause();
+            this.victorySound.pause();
+            this.bgMusic.pause();
         })
     }
     disableMute() {
         document.getElementById("unmute").addEventListener("click", () => {
+            this.gameOverSound.play();
             this.bgMusic.play();
             this.flipSound.play();
             this.matchSound.play();
-            this.victorySound.play();
-            this.gameOverSound.play();
+            this.victorySound.play(); 
         });
     }
 }  
@@ -72,6 +82,7 @@ class PlanetShift {
             this.audioController.startMusic();
             this.audioController.enableMute();
             this.audioController.disableMute();
+            this.audioController.stopSounds();
             this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
