@@ -70,6 +70,7 @@ allows the user easily grasp and retain the object from the card.
 -   I have followed the walkthrough tutorial for the game commands in javascript [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=395s)
 ## Other 
 -   Buttons style box-shadow taken from [here](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow2)
+-   Modal box taken from [here](https://www.w3schools.com/howto/howto_css_modals.asp)
 ## Mentor
 ## Tutors
 ## Slack
