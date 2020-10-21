@@ -1,5 +1,4 @@
-//Code used from the walkthrough tutorial
-
+//--------------------------------------------------------------------AudioController Class
 class AudioController {
     constructor() {
         this.bgMusic = new Audio("assets/audio/new-horizons.mp3");
@@ -50,7 +49,13 @@ class AudioController {
             this.gameOverSound.muted = false;
         });
     }
-}  
+    switchMuteUnmute() {
+        
+    }
+}
+
+
+//---------------------------------------------------------------------------PlanetShift Class
 
 class PlanetShift {
     constructor(totalTime, cards) {
@@ -79,6 +84,8 @@ class PlanetShift {
         this.ticker.innerText = this.totalClicks;
         this.audioController.mute();
         this.audioController.unmute();
+        this.audioController.switchMuteUnmute();
+        
     }
 
     hideCards() {
@@ -170,6 +177,10 @@ class PlanetShift {
     }
 }
 
+       
+//-------------------------------------------------------------------------------------------------readyState function 
+//----------------------------------------------------------it says if the html is not loaded yet wait till it's ready
+
 if(document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
@@ -180,6 +191,7 @@ function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
     let game = new PlanetShift(100, cards);
+    
     
     
 
@@ -197,30 +209,20 @@ function ready(){
     });
 };
 
-//Modal-box
+//---------------------------------------------------------------------------------------------modal-box
 
-// Get the modal
+const button = document.getElementById("myBtn");
 const modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-const btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+button.onclick = function() {
+    modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    modal.style.display = "none";
+}   
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";   
+    }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
