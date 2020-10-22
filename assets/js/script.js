@@ -49,11 +49,17 @@ class AudioController {
             this.gameOverSound.muted = false;
         });
     }
-    switchMuteUnmute() {
-        
-    }
+    
+    /*switchMuteUnmute() {
+        let none = true;
+        none = !none;
+        if(none) {
+            document.getElementById("mute").style.display = "block";
+        } else {
+            document.getElementById("unmute").style.display = "none";
+        };
+    };*/
 }
-
 
 //---------------------------------------------------------------------------PlanetShift Class
 
@@ -65,6 +71,7 @@ class PlanetShift {
         this.timer = document.getElementById("time-remaining");
         this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
+        //this.audioController.switchMuteUnmute();
     }
 
     startGame() {
@@ -84,7 +91,6 @@ class PlanetShift {
         this.ticker.innerText = this.totalClicks;
         this.audioController.mute();
         this.audioController.unmute();
-        this.audioController.switchMuteUnmute();
     }
 
     hideCards() {
@@ -206,7 +212,7 @@ function ready(){
             game.flipCard(card);
         });
     });
-};
+}
 
 //---------------------------------------------------------------------------------------------modal-box
 

@@ -199,6 +199,7 @@ img {
     background-color: rgba(0, 0, 0, 0.6); 
 }
 
+
 /*------------------------------------------ Modal Content/Box */
 .modal-content {
     background-color: #0b3d55;
@@ -209,6 +210,7 @@ img {
     border: none;
     width: 80%; 
     border-radius: 15px;
+    box-shadow: 5px 10px 8px 10px #818899;
 }
 
 /* -----------------------------------------------The Close Button */
