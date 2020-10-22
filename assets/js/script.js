@@ -7,6 +7,7 @@ class AudioController {
         this.victorySound = new Audio("assets/audio/victory.mp3");
         this.gameOverSound = new Audio("assets/audio/game-over.mp3");
         this.bgMusic.volume = 0.5;
+        this.bgMusic.loop = true;
     }
 
     startMusic() {
@@ -37,7 +38,6 @@ class AudioController {
             this.flipSound.muted = true;
             this.victorySound.muted = true;
             this.gameOverSound.muted = true;
-            this.busy = true;
         })
     }
     unmute() {
@@ -68,13 +68,13 @@ class PlanetShift {
     }
 
     startGame() {
+       
         this.cardToCheck = null;
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
         setTimeout(() => {
-            this.audioController.startMusic();
             this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
