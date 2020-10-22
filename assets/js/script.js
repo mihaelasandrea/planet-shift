@@ -33,7 +33,7 @@ class AudioController {
     }
     mute() {
         document.getElementById("mute").addEventListener("click", () => {
-            this.bgMusic.pause();
+            this.bgMusic.muted = true;
             this.matchSound.muted = true;
             this.flipSound.muted = true;
             this.victorySound.muted = true;
@@ -42,7 +42,7 @@ class AudioController {
     }
     unmute() {
         document.getElementById("unmute").addEventListener("click", () => {
-            this.bgMusic.play();
+            this.bgMusic.muted = false;
             this.matchSound.muted = false;
             this.flipSound.muted = false;
             this.victorySound.muted = false;
@@ -68,13 +68,13 @@ class PlanetShift {
     }
 
     startGame() {
-       
         this.cardToCheck = null;
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
         setTimeout(() => {
+            this.audioController.startMusic();
             this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
@@ -85,7 +85,6 @@ class PlanetShift {
         this.audioController.mute();
         this.audioController.unmute();
         this.audioController.switchMuteUnmute();
-        
     }
 
     hideCards() {
