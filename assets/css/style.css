@@ -15,11 +15,18 @@ body {
 /*--------------------------------------------------------------------------game-title*/
 
 .game-title {
-    color: #b9babb;
+    color: #a6b7c9;
     font-weight: bold;
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     letter-spacing: 7px;
+    background-color: #000000;
+    box-shadow: 5px 10px 18px rgb(252, 252, 253);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /*----------------------------------------------------------------------------game-info*/
@@ -119,7 +126,7 @@ body {
 /*------------------------------------------------------------------------------buttons*/
 
 .buttons {
-    background-color: #477e9e;
+    background-color: #04141d;
     border: none;
     display: inline-block;
     outline: none;
@@ -161,6 +168,10 @@ img {
     .game-title {
         font-weight: bold;
         font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .features {
@@ -174,15 +185,15 @@ img {
     }
 
     @keyframes overlay-grow {
-    from {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 3em;
+        }
     }
-    to {
-        background-color: rgba(0, 0, 0, 0.7);
-        font-size: 3em;
-    }
-}
 }
 
 /*--------------------------------------------------------------------------------modal-box*/
