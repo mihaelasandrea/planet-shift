@@ -38,7 +38,15 @@
 -   The cards display on the font-face images of different planets from our solar system on a square 
 black backgound. The planets' bright colours stand out from their black background and this contrast 
 allows the user easily grasp and retain the object from the card.
+
+<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/5229730441.png"></h2>
+
 -   On the back face, the cards display an image of outerspace.
+
+<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/1226816251.jpg"></h2>
+
+
+
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
     (when flip card, match cards, game over and victory);
