@@ -1,3 +1,4 @@
+//--------------------------------------------------------------------Code written following the walkthrough tutorials
 //--------------------------------------------------------------------AudioController Class
 class AudioController {
     constructor() {
@@ -31,6 +32,7 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
+    //-----------------------------------------------------------Code written by me
     mute() {
         document.getElementById("mute").addEventListener("click", () => {
             this.bgMusic.muted = true;
@@ -60,7 +62,7 @@ class AudioController {
         };
     };*/
 }
-
+//-----------------------------------------------------------------------End code written by me
 //---------------------------------------------------------------------------PlanetShift Class
 
 class PlanetShift {

@@ -31,12 +31,12 @@
     -   buttons shadow rgb(138, 138, 158);
     -   for the modal box background this colour #0b3d55 and shadow #818899.
 ### Typography
--   [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono?query=tec)  google font is the main font used throughout the whole text from the game.
+-   [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono?query=tec)  google font is the main font used throughout the whole game text.
 ### Imagery
--   Front face cards display images of different planets from our solar system on a square 
-black backgound. The planets' bright colours stands out from their black background and this contrast 
+-   the cards display on the font-face images of different planets from our solar system on a square 
+black backgound. The planets' bright colours stand out from their black background and this contrast 
 allows the user easily grasp and retain the object from the card.
--   Back face cards display an unique image of space with lights on the background
+-   on the back face the cards display an image of outerspace.
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
     (when flip card, match cards, game over and victory);
@@ -53,7 +53,7 @@ allows the user easily grasp and retain the object from the card.
     -   shows remaining time;
     -   for each game restart cards are shuffled;
 ## Features left to implement
--   the user can choose from beginner (60 seconds remaining time) or advanced level (100 seconds remaining time);
+-   the user can choose from beginner (50 seconds remaining time) or advanced level (100 seconds remaining time);
 -   while playing the user can restart the game at any time;
 -   modal for scores;
 # Technologies Used
@@ -62,12 +62,12 @@ allows the user easily grasp and retain the object from the card.
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
 ### Frameworks, Libraries & Programs Used
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the game.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Share Tech Mono' font into the style.css file which is used on all text throughout the game.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make 
+    - jQuery was used for the interactive features.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
@@ -87,10 +87,10 @@ allows the user easily grasp and retain the object from the card.
 -   Friends and family members were asked to review the game to point out any bugs and/or user experience issues.
 
 ## Known Bugs
--   when the game loads before clicking layout to start game, time-remaining shows 60seconds. When starting the game it turns on 100 seconds
+-   when the game loads, before clicking layout to start game, time-remaining shows 60seconds. When starting the game it turns on 100 seconds
      as it is set in the script.js file.
 # Deployment
-### GitHub Pages
+## GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
 
@@ -102,7 +102,7 @@ The project was deployed to GitHub Pages using the following steps...
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-### Forking the GitHub Repository
+## Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
@@ -110,7 +110,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
+## Making a Local Clone
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. Under the repository name, click "Clone or download".
@@ -154,9 +154,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   backround image dark space  source [here](https://wallpapersafari.com/w/4ncxJI)
 ## Tutorials
 <p>My personal scope of creating this memory game was learning how to juggle with javascript functions and algorithms
-    and to better undestand the applicability of the powerfull tools that this intricate programming language
+    and to better undestand the applicability of the powerful tools that this intricate programming language
     has to offer. I have to admit that I have understood a big deal of logical javascript behaviour while 
-    following these tutorials. They offered me big support during the creation of this project.</p>
+    following these tutorials. They offered me important support during the creation of this project.</p>
 
 -   I have taken inspiration as for the structure of the memory game [here](https://www.youtube.com/watch?v=28VfzEiJgy4)
 -   I have followed the walkthrough tutorial for the game commands in javascript [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=395s)
