@@ -51,16 +51,6 @@ class AudioController {
             this.gameOverSound.muted = false;
         });
     }
-    
-    /*switchMuteUnmute() {
-        let none = true;
-        none = !none;
-        if(none) {
-            document.getElementById("mute").style.display = "block";
-        } else {
-            document.getElementById("unmute").style.display = "none";
-        };
-    };*/
 }
 //-----------------------------------------------------------------------End code written by me
 //---------------------------------------------------------------------------PlanetShift Class
@@ -73,19 +63,6 @@ class PlanetShift {
         this.timer = document.getElementById("time-remaining");
         this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
-        //this.audioController.switchMuteUnmute();
-    }
-
-    score(timer, ticker) {
-         if(this.matchedCards.length === this.cardsArray.length && this.timer < 80 && this.ticker < 30) {
-             return "Well done!!!"
-         };
-         if(this.matchedCards.length === this.cardsArray.length && this.timer < 50 && this.ticker < 60) {
-             return "Nice!!!"
-         };
-         if(this.matchedCards.length === this.cardsArray.length && this.timer < 10 && this.ticker < 80) {
-             return "Keep playing!"
-         };
     }
 
     startGame() {

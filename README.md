@@ -15,12 +15,11 @@
 
 # User Experience
 ## User Stories
--   As a user I want to be able to play the memory-game smoothly
--   As a user I want to be able to mute and unmute the sounds
--   As a user I want to find information about the game and the game-rules
--   As a user I want to play different game-levels
--   As a user I want to get information about the results I scored
--   As a user I want to be able to restart the game any time
+1. As a user I want to be able to play the game on different devices.
+1. As a user I want to be able to play the memory-game smoothly.
+1. As a user I want to be able to mute and unmute the sounds.
+1. As a user I want to find information about the game and the game-rules.
+
 ## Design
 ### Color Scheme
 -   The colour palette for the game is:
@@ -78,6 +77,32 @@ allows the user easily grasp and retain the object from the card.
 1. [PicResize:](https://picresize.com/)
     - PicResize was used to resize the pictures used in the game.
 # Testing
+## Testing User Stories from User Experience (UX) Section
+1. As a user I want to be able to play the game on different devices.
+
+    1. Card images display well on devices from different sizes.
+    2. Text is easy to be read on small devices.
+    
+2. As a user I want to be able to play the memory-game smoothly.
+
+    1. The cards flip up and down easily with no issue. 
+    2. Images are easy to see unobstructed from the background.
+    3. The chosen colours and design follow a consistent styling.
+    4. The commands are easy to find and understand.
+
+3. As a user I want to be able to mute and unmute the sounds.
+
+    1. Mute/Unmute buttons are easy to find at the top of the page.
+    2. The game remains muted after starting another game.
+    3. Both background music and control sounds(flip-sound, match-sound, victory-sound.
+     and gameover-sound) go muted when click on mute button and go back unmuted when press unmute button.
+
+4. As a user I want to find information about the game and the game-rules.
+
+    1. The modal-box is easy to open by clicking the button down the page.
+    2. When clicked, the modal-box opens up and presents the game information clearly, in a very simple language.
+    3. The user can close the box easily by clicking on the close button or everywhere outside the modal-box.
+
 ## Validation
 -   [W3C Markup Validator](https://validator.w3.org/) View [results]()
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results]()
@@ -86,10 +111,6 @@ allows the user easily grasp and retain the object from the card.
 -   The game was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The game was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   Friends and family members were asked to review the game to point out any bugs and/or user experience issues.
-
-## Known Bugs
--   when the game loads, before clicking layout to start game, time-remaining shows 60seconds. When starting the game it turns on 100 seconds
-     as it is set in the script.js file.
 # Deployment
 ## GitHub Pages
 
@@ -157,7 +178,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 <p>My personal scope of creating this memory game was learning how to juggle with javascript functions and algorithms
     and to better undestand the applicability of the powerful tools that this intricate programming language
     has to offer. I have to admit that I have understood a big deal of logical javascript behaviour while 
-    following these tutorials. They offered me important support during the creation of this project.</p>
+    following these tutorials and they offered me important support during the creation of this project.</p>
 
 -   I have taken inspiration as for the structure of the memory game [here](https://www.youtube.com/watch?v=28VfzEiJgy4)
 -   I have followed the walkthrough tutorial for the game commands in javascript [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=395s)
