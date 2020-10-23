@@ -49,10 +49,15 @@ allows the user easily grasp and retain the object from the card.
 
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
-    (when flip card, match cards, game over and victory);
+    (when flip card, match cards, game over and victory).
 -   The chosen background music builds up op an progressive tempo and has a pleasant energizing tone and rythm.
 ## Wireframes
 -   Wireframes [View](https://www.figma.com/file/sxreNPL15miV7jLFIaidk5/memory-game?node-id=0%3A1)
+
+<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/2212875549.png"></h2>
+
+
+
 # Features
 -   It's responsive on different device sizes
 -   Contains interactive elements such as:
