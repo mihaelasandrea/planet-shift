@@ -74,6 +74,18 @@ class PlanetShift {
         //this.audioController.switchMuteUnmute();
     }
 
+    score(timer, ticker) {
+         if(this.matchedCards.length === this.cardsArray.length && this.timer < 80 && this.ticker < 30) {
+             return "Well done!!!"
+         };
+         if(this.matchedCards.length === this.cardsArray.length && this.timer < 50 && this.ticker < 60) {
+             return "Nice!!!"
+         };
+         if(this.matchedCards.length === this.cardsArray.length && this.timer < 10 && this.ticker < 80) {
+             return "Keep playing!"
+         };
+    }
+
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -89,6 +101,7 @@ class PlanetShift {
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
+        this.score();
         this.audioController.mute();
         this.audioController.unmute();
     }

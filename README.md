@@ -23,8 +23,13 @@
 -   As a user I want to be able to restart the game any time
 ## Design
 ### Color Scheme
--   The colour palette for the game is gradient blue set vertically starting 
-from top black/dark-blue going lighter towards the middle and going darker to dark-blue/black towards bottom.
+-   The colour palette for the game is:
+    -   for the background gradient blue set vertically starting from top black/dark-blue going
+        lighter towards the middle and going darker to dark-blue/black towards bottom. #000000, #0f73b6d8, #000000;
+    -   for the title, game-info and buttons text this grey #a6b7c9;
+    -   title shadow rgb(252, 252, 253);
+    -   buttons shadow rgb(138, 138, 158);
+    -   for the modal box background this colour #0b3d55 and shadow #818899.
 ### Typography
 -   [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono?query=tec)  google font is the main font used throughout the whole text from the game.
 ### Imagery
@@ -34,23 +39,23 @@ allows the user easily grasp and retain the object from the card.
 -   Back face cards display an unique image of space with lights on the background
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
-(click on card, match cards, game over and victory)
--   The chosen sounds are also set at a confortable volume in order not to upset the User Experience
--   The chosen background music has a pleasant energizing tone and rythm.
+    (when flip card, match cards, game over and victory);
+-   The chosen background music builds up op an progressive tempo and has a pleasant energizing tone and rythm.
 ## Wireframes
 -   Wireframes [View](https://www.figma.com/file/sxreNPL15miV7jLFIaidk5/memory-game?node-id=0%3A1)
 # Features
--   The game offers a large amount of features:
-    -   It's responsive on different device sizes
-    -   contain interactive elements such as:
-        -   background music which plays by default and can be muted by option
-        -   different sounds for each interactive user command: when click on card, match cards, game 
-        over and victory
-        -   shows number of flips named in the game "shifts" in order to keep continuity with the game name "Planet Shift"
-        -   shows remaining time
-        -   the user can choose from beginner (60 seconds remaining time) or advanced level (100 seconds remaining time)
-        -   while playing the user can restart the game at any time
-        -   for each game restart cards are shuffled
+-   It's responsive on different device sizes
+-   Contains interactive elements such as:
+    -   background music which plays by default and can be muted by option;
+    -   different sounds for each interactive user command: when flip card, match cards, game 
+            over and victory which can be muted by option;
+    -   shows number of flips (named in the game "shifts" for consistency reasons - game name "Planet Shift");
+    -   shows remaining time;
+    -   for each game restart cards are shuffled;
+## Features left to implement
+-   the user can choose from beginner (60 seconds remaining time) or advanced level (100 seconds remaining time);
+-   while playing the user can restart the game at any time;
+-   modal for scores;
 # Technologies Used
 ### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -72,12 +77,18 @@ allows the user easily grasp and retain the object from the card.
 1. [PicResize:](https://picresize.com/)
     - PicResize was used to resize the pictures used in the game.
 # Testing
-### Further Testing
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   Friends and family members were asked to review the game and documentation to point out any bugs and/or user experience issues.
+## Validation
+-   [W3C Markup Validator](https://validator.w3.org/) View [results]()
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results]()
+-   [JavaScript validator](https://jshint.com/) View [results]()
+## Further Testing
+-   The game was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The game was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+-   Friends and family members were asked to review the game to point out any bugs and/or user experience issues.
 
-### Known Bugs
+## Known Bugs
+-   when the game loads before clicking layout to start game, time-remaining shows 60seconds. When starting the game it turns on 100 seconds
+     as it is set in the script.js file.
 # Deployment
 ### GitHub Pages
 
@@ -142,7 +153,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   space image source [here](https://commons.wikimedia.org/w/index.php?curid=6756556)
 -   backround image dark space  source [here](https://wallpapersafari.com/w/4ncxJI)
 ## Tutorials
-<p>My personal scope of creating this memory game was learning how to juggle with javascript function
+<p>My personal scope of creating this memory game was learning how to juggle with javascript functions and algorithms
     and to better undestand the applicability of the powerfull tools that this intricate programming language
     has to offer. I have to admit that I have understood a big deal of logical javascript behaviour while 
     following these tutorials. They offered me big support during the creation of this project.</p>
@@ -150,8 +161,12 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   I have taken inspiration as for the structure of the memory game [here](https://www.youtube.com/watch?v=28VfzEiJgy4)
 -   I have followed the walkthrough tutorial for the game commands in javascript [here](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=395s)
 ## Other 
--   Buttons style box-shadow taken from [here](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow2)
--   Modal box taken from [here](https://www.w3schools.com/howto/howto_css_modals.asp)
-## Mentor
-## Tutors
-## Slack
+-   Buttons style box-shadow inspiration from [here](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow2)
+-   Modal box inspiration from [here](https://www.w3schools.com/howto/howto_css_modals.asp)
+## Acknowledgements:
+-   My Mentor Medale Oluwafemi for continuous helpful feedback support and valuable guidance with UX experience
+
+-   Tutor support at Code Institute for their support. Special thanks to Stephan for helping me to realize where I needed to call the function
+     so that the code I wrote actually worked.
+-   Student Care
+-   Slack Community and especially to Mr_Bim_alumni for helping me realize why the function was miswritten.
