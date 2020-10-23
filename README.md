@@ -32,11 +32,12 @@
     -   for the modal box background this colour #0b3d55 and shadow #818899.
 ### Typography
 -   [Share Tech Mono](https://fonts.google.com/specimen/Share+Tech+Mono?query=tec)  google font is the main font used throughout the whole game text.
+-   Sans Serif for the fallback font.
 ### Imagery
--   the cards display on the font-face images of different planets from our solar system on a square 
+-   The cards display on the font-face images of different planets from our solar system on a square 
 black backgound. The planets' bright colours stand out from their black background and this contrast 
 allows the user easily grasp and retain the object from the card.
--   on the back face the cards display an image of outerspace.
+-   On the back face, the cards display an image of outerspace.
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
     (when flip card, match cards, game over and victory);

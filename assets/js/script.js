@@ -35,11 +35,12 @@ class AudioController {
     //-----------------------------------------------------------Code written by me
     mute() {
         document.getElementById("mute").addEventListener("click", () => {
-            this.bgMusic.muted = true;
-            this.matchSound.muted = true;
-            this.flipSound.muted = true;
-            this.victorySound.muted = true;
-            this.gameOverSound.muted = true;
+            //this.bgMusic.muted = true;
+           // this.matchSound.muted = true;
+            //this.flipSound.muted = true;
+            //this.victorySound.muted = true;
+           // this.gameOverSound.muted = true;
+           this.testMute();
         })
     }
     unmute() {
@@ -51,16 +52,27 @@ class AudioController {
             this.gameOverSound.muted = false;
         });
     }
-    
-    /*switchMuteUnmute() {
-        let none = true;
-        none = !none;
-        if(none) {
-            document.getElementById("mute").style.display = "block";
-        } else {
-            document.getElementById("unmute").style.display = "none";
-        };
-    };*/
+    testMute() {
+        if ($("#mute").hasClass("mute")) {
+                this.bgMusic.muted = true;
+                this.matchSound.muted = true;
+                this.flipSound.muted = true;
+                this.victorySound.muted = true;
+                this.gameOverSound.muted = true;
+                $("#mute").removeClass("mute");
+                $("#mute").addClass("unmute"); 
+                $("#mute").text('UNMUTE')
+            } else {
+                this.bgMusic.muted = false;
+                this.flipSound.muted = false;
+                this.matchSound.muted = false;
+                this.victorySound.muted = false;
+                this.gameOverSound.muted = false;
+                $("#mute").removeClass("unmute");
+                $("#mute").addClass("mute");
+                $("#mute").text('MUTE')
+            }
+    }
 }
 //-----------------------------------------------------------------------End code written by me
 //---------------------------------------------------------------------------PlanetShift Class
@@ -73,7 +85,6 @@ class PlanetShift {
         this.timer = document.getElementById("time-remaining");
         this.ticker = document.getElementById("flips");
         this.audioController = new AudioController();
-        //this.audioController.switchMuteUnmute();
     }
 
     score(timer, ticker) {
@@ -105,7 +116,6 @@ class PlanetShift {
         this.ticker.innerText = this.totalClicks;
         this.score();
         this.audioController.mute();
-        this.audioController.unmute();
     }
 
     hideCards() {
@@ -236,13 +246,13 @@ const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 button.onclick = function() {
     modal.style.display = "block";
-}
+};
 span.onclick = function() {
     modal.style.display = "none";
-}   
+};
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";   
     }
-}
+};
 

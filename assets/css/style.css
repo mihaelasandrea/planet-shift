@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', sans-serif;
     margin: 0;
     background: linear-gradient(#000000, #0f73b6d8, #000000);
 }
