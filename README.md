@@ -1,3 +1,5 @@
+
+<h1>PLANET SHIFT Memory-Game</h1>
 [View the live game here](https://mihaelasandrea.github.io/planet-shift/)
 <p> This is a memory game created with the scope of having 
     fun when taking a break from working, learning, etc. The strategy was to create a 
@@ -45,8 +47,6 @@ allows the user easily grasp and retain the object from the card.
 
 <h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/1226816251.jpg"></h2>
 
-
-
 ### Music and Sounds
 -   Background music is set at 50% volume so that the user can hear the game commands sounds 
     (when flip card, match cards, game over and victory);
@@ -63,9 +63,9 @@ allows the user easily grasp and retain the object from the card.
     -   Shows remaining time.
     -   For each game restart cards are shuffled.
 ## Features left to implement
--   the user can choose from beginner (50 seconds remaining time) or advanced level (100 seconds remaining time);
--   while playing the user can restart the game at any time;
--   modal for scores;
+-   The user can choose from beginner (50 seconds remaining time) or advanced level (100 seconds remaining time).
+-   While playing the user can restart the game at any time.
+-   Modal for scores.
 # Technologies Used
 ### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -86,6 +86,8 @@ allows the user easily grasp and retain the object from the card.
     - Figma was used to create the [wireframes](https://www.figma.com/file/sxreNPL15miV7jLFIaidk5/memory-game?node-id=0%3A1) during the design process.
 1. [PicResize:](https://picresize.com/)
     - PicResize was used to resize the pictures used in the game.
+1. [Easycaptures](https://easycaptures.com/)
+    - EasyCaptures was used to host the mockup, the sample card images, the html, css and javascript validation results in the README file.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
 1. As a user I want to be able to play the game on different devices.
@@ -114,9 +116,9 @@ allows the user easily grasp and retain the object from the card.
     3. The user can close the box easily by clicking on the close button or everywhere outside the modal-box.
 
 ## Validation
--   [W3C Markup Validator](https://validator.w3.org/) View [results]()
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results]()
--   [JavaScript validator](https://jshint.com/) View [results]()
+-   [W3C Markup Validator](https://validator.w3.org/) View [results](https://easycaptures.com/fs/uploaded/1497/9169754838.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results](https://easycaptures.com/fs/uploaded/1497/2784430387.png)
+-   [JavaScript validator](https://jshint.com/) View [results](https://easycaptures.com/fs/uploaded/1497/6656789674.png)
 ## Further Testing
 -   The game was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The game was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
