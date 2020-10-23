@@ -1,5 +1,4 @@
-//--------------------------------------------------------------------Code written following the walkthrough tutorials
-//--------------------------------------------------------------------AudioController Class
+/*--------------------------------------------------------------------AudioController Class*/
 class AudioController {
     constructor() {
         this.bgMusic = new Audio("assets/audio/new-horizons.mp3");
@@ -32,7 +31,7 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
-    //-----------------------------------------------------------Code written by me
+
     mute() {
         document.getElementById("mute").addEventListener("click", () => {
             this.bgMusic.muted = true;
@@ -52,8 +51,8 @@ class AudioController {
         });
     }
 }
-//-----------------------------------------------------------------------End code written by me
-//---------------------------------------------------------------------------PlanetShift Class
+
+/*---------------------------------------------------------------------------PlanetShift Class*/
 
 class PlanetShift {
     constructor(totalTime, cards) {
@@ -175,8 +174,8 @@ class PlanetShift {
 }
 
        
-//-------------------------------------------------------------------------------------------------readyState function 
-//----------------------------------------------------------it says if the html is not loaded yet wait till it's ready
+/*-------------------------------------------------------------------------------------------------readyState function */
+/*----------------------------------------------------------it says if the html is not loaded yet wait till it's ready*/
 
 if(document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready());
@@ -206,7 +205,7 @@ function ready(){
     });
 }
 
-//---------------------------------------------------------------------------------------------modal-box
+/*---------------------------------------------------------------------------------------------modal-box*/
 
 const button = document.getElementById("myBtn");
 const modal = document.getElementById("myModal");
