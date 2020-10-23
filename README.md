@@ -205,8 +205,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   Modal box inspiration from [here](https://www.w3schools.com/howto/howto_css_modals.asp)
 ## Acknowledgements:
 -   My Mentor Medale Oluwafemi for continuous helpful feedback support and valuable guidance with UX experience
-
 -   Tutor support at Code Institute for their support. Special thanks to Stephan for helping me to realize where I needed to call the function
      so that the code I wrote actually worked.
 -   Student Care
 -   Slack Community and especially to Mr_Bim_alumni for helping me realize why the function was miswritten.
+-   [Edabit programme](https://edabit.com/) which helped me creating and better understanding javascript syntax.
