@@ -48,7 +48,7 @@ class AudioController {
             this.flipSound.muted = false;
             this.victorySound.muted = false;
             this.gameOverSound.muted = false;
-        });
+        })
     }
 }
 
@@ -79,7 +79,6 @@ class PlanetShift {
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
-        this.score();
         this.audioController.mute();
         this.audioController.unmute();
     }
@@ -187,9 +186,6 @@ function ready(){
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
     let game = new PlanetShift(100, cards);
-    
-    
-    
 
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
