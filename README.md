@@ -13,6 +13,8 @@
      daily routine.
 </p>
 
+<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/6106906206.png"></h2>
+
 # User Experience
 ## User Stories
 1. As a user I want to be able to play the game on different devices.
@@ -46,12 +48,12 @@ allows the user easily grasp and retain the object from the card.
 # Features
 -   It's responsive on different device sizes
 -   Contains interactive elements such as:
-    -   background music which plays by default and can be muted by option;
-    -   different sounds for each interactive user command: when flip card, match cards, game 
-            over and victory which can be muted by option;
-    -   shows number of flips (named in the game "shifts" for consistency reasons - game name "Planet Shift");
-    -   shows remaining time;
-    -   for each game restart cards are shuffled;
+    -   Background music which plays by default and can be muted by option.
+    -   Different sounds for each interactive user command: when flip card, match cards, game 
+            over and victory which can be muted by option.
+    -   Shows number of flips (named in the game "shifts" for consistency reasons - game name "Planet Shift").
+    -   Shows remaining time.
+    -   For each game restart cards are shuffled.
 ## Features left to implement
 -   the user can choose from beginner (50 seconds remaining time) or advanced level (100 seconds remaining time);
 -   while playing the user can restart the game at any time;
@@ -82,7 +84,7 @@ allows the user easily grasp and retain the object from the card.
 
     1. Card images display well on devices from different sizes.
     2. Text is easy to be read on small devices.
-    
+
 2. As a user I want to be able to play the memory-game smoothly.
 
     1. The cards flip up and down easily with no issue. 
