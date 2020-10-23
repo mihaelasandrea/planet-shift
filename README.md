@@ -1,5 +1,6 @@
 
 <h1>PLANET SHIFT Memory-Game</h1>
+
 [View the live game here](https://mihaelasandrea.github.io/planet-shift/)
 <p> This is a memory game created with the scope of having 
     fun when taking a break from working, learning, etc. The strategy was to create a 
