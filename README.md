@@ -209,4 +209,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
      so that the code I wrote actually worked.
 -   Student Care
 -   Slack Community and especially to Mr_Bim_alumni for helping me realize why the function was miswritten.
--   [Edabit programme](https://edabit.com/) which helped me creating and better understanding javascript syntax.
+-   [Edabit programme](https://edabit.com/) which helped me better understanding javascript syntax while practicing on different challenges.
