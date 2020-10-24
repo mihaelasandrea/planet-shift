@@ -80,6 +80,8 @@ allows the user easily grasp and retain the object from the card.
 ### Frameworks, Libraries & Programs Used
 1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the game.
+1. [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used to add the social-media icons in the footer of the page.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Share Tech Mono' font into the style.css file which is used on all text throughout the game.
 1. [jQuery:](https://jquery.com/)
