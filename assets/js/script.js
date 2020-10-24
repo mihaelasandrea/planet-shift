@@ -41,7 +41,7 @@ class AudioController {
             this.flipSound.muted = true;
             this.victorySound.muted = true;
             this.gameOverSound.muted = true;
-        })
+        });
     }
     unmute() {
         document.getElementById("unmute").addEventListener("click", () => {
@@ -50,7 +50,7 @@ class AudioController {
             this.flipSound.muted = false;
             this.victorySound.muted = false;
             this.gameOverSound.muted = false;
-        })
+        });
     }
 }
 

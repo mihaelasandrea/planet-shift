@@ -16,7 +16,7 @@
      daily routine.
 </p>
 
-<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1497/6106906206.png"></h2>
+<h2 align="center"><img src="https://easycaptures.com/fs/uploaded/1498/0902873388.png"></h2>
 
 # User Experience
 ## User Stories
@@ -122,9 +122,9 @@ allows the user easily grasp and retain the object from the card.
     3. The user can close the box easily by clicking on the close button or everywhere outside the modal-box.
 
 ## Validation
--   [W3C Markup Validator](https://validator.w3.org/) View [results](https://easycaptures.com/fs/uploaded/1497/9169754838.png)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results](https://easycaptures.com/fs/uploaded/1497/2784430387.png)
--   [JavaScript validator](https://jshint.com/) View [results](https://easycaptures.com/fs/uploaded/1497/6656789674.png)
+-   [W3C Markup Validator](https://validator.w3.org/) View [results](https://easycaptures.com/fs/uploaded/1498/4114442852.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results](https://easycaptures.com/fs/uploaded/1498/2110581351.png)
+-   [JavaScript validator](https://jshint.com/) View [results](https://easycaptures.com/fs/uploaded/1498/1830005688.png)
 ## Further Testing
 -   The game was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The game was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
