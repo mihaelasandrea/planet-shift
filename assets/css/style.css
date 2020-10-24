@@ -200,11 +200,11 @@ img {
 /*---------------------------------------------------Footer*/
 
 .list-inline-item i {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     font-size: 25px;
-    color: #a6b7c9;
-    border-radius: 3px;    
+    color: #a6b7c9; 
+    border-radius: 50px;      
 }
 
 .list-inline-item i:hover {
@@ -216,7 +216,7 @@ img {
     color: #fafafa;
     margin-top: 80px;
     padding: 30px;
-    justify-items: center;
+    
 }
 
 /*---------------------------------------------------------------------------media queries*/
@@ -273,5 +273,7 @@ img {
         display: inline-block;
         margin-top: 40px;
         padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
