@@ -112,7 +112,7 @@ allows the user easily grasp and retain the object from the card.
 
     1. Mute/Unmute buttons are easy to find at the top of the page.
     2. The game remains muted after starting another game.
-    3. Both background music and control sounds(flip-sound, match-sound, victory-sound.
+    3. Both background music and control sounds (flip-sound, match-sound, victory-sound.
      and gameover-sound) go muted when click on mute button and go back unmuted when press unmute button.
 
 4. As a user I want to find information about the game and the game-rules.
