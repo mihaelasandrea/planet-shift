@@ -152,64 +152,7 @@ img {
   height: 100%;
 }
 
-/*---------------------------------------------------------------------------media queries*/
 
-@media (max-width: 600px) {
-    .card {
-        height: 60px;
-        width: 60px;
-    }
-
-    .game-info {
-        font-size: 1em;
-        font-weight: bold;
-    }
-
-    .game-title {
-        font-weight: bold;
-        font-size: 1.5em;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    .features {
-        font-size: 1em;
-        font-weight: bold;
-    }
-
-    .buttons {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .list-inline-item a i {
-        width: 15px;
-        height: 15px;
-        font-size: 15px;
-        color: #a6b7c9;
-        border-radius: 3px;
-    }
-
-    .list-inline li {
-        display: inline-block;
-        color: #fafafa;
-        margin-top: 50px;
-        padding: 30px;
-    }
-
-    @keyframes overlay-grow {
-        from {
-            background-color: rgba(0, 0, 0, 0);
-            font-size: 0;
-        }
-        to {
-            background-color: rgba(0, 0, 0, 0.7);
-            font-size: 3em;
-        }
-    }
-}
 
 /*--------------------------------------------------------------------------------modal-box*/
 
@@ -256,22 +199,79 @@ img {
 
 /*---------------------------------------------------Footer*/
 
-.list-inline-item a i {
+.list-inline-item i {
     width: 25px;
     height: 25px;
     font-size: 25px;
     color: #a6b7c9;
-    border-radius: 3px;
-    
+    border-radius: 3px;    
 }
 
-.list-inline-item a i:hover {
+.list-inline-item i:hover {
     box-shadow: 5px 8px 10px 10px rgb(222, 234, 241);
 }
 
 .list-inline li {
     display: inline-block;
     color: #fafafa;
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 30px;
+    justify-items: center;
+}
+
+/*---------------------------------------------------------------------------media queries*/
+
+@media (max-width: 600px) {
+    .card {
+        height: 60px;
+        width: 60px;
+    }
+
+    .game-info {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .game-title {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .features {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .buttons {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    @keyframes overlay-grow {
+        from {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0;
+        }
+        to {
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 3em;
+        }
+    }
+
+    .list-inline-item i {
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        border-radius: 3px;
+    }
+
+    .list-inline li {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px;
+    }
 }
