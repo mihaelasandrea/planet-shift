@@ -50,7 +50,6 @@ body {
     perspective: 500px
 }
 
-
 /*--------------------------------------------------------------------------------cards*/
 
 .card {
@@ -201,7 +200,7 @@ img {
     cursor: pointer;
 }
 
-/*---------------------------------------------------Footer*/
+/*--------------------------------------------------------------------------Footer*/
 
 .list-inline-item i {
     width: 40px;
@@ -224,7 +223,7 @@ img {
     color: #fafafa;
     margin-top: 80px;
     padding: 30px;
-    
+    text-align: center;
 }
 
 /*---------------------------------------------------------------------------media queries*/
@@ -281,7 +280,5 @@ img {
         display: inline-block;
         margin-top: 40px;
         padding: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
     }
 }

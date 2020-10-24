@@ -1,4 +1,5 @@
-/*------------------------Code written following the walkthrough tutorial mentioned in the README file*/
+/*--------------Code written following the walkthrough tutorial mentioned in the README file*/
+
 /*--------------------------------------------------------------------AudioController Class*/
 class AudioController {
     constructor() {
@@ -32,7 +33,7 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
-/*----------------------------------------------------------------Code written by me*/
+/*--------------------------------------------------------------------Code written by me*/
     mute() {
         document.getElementById("mute").addEventListener("click", () => {
             this.bgMusic.muted = true;
@@ -53,7 +54,7 @@ class AudioController {
     }
 }
 
-/*------------------------------------------------------------------End code written by me*/
+/*----------------------------------------------------------------------End code written by me*/
 
 /*---------------------------------------------------------------------------PlanetShift Class*/
 
@@ -177,7 +178,6 @@ class PlanetShift {
 
        
 /*-------------------------------------------------------------------------------------------------readyState function */
-/*----------------------------------------------------------it says if the html is not loaded yet wait till it's ready*/
 
 if(document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready());
