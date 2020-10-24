@@ -138,6 +138,10 @@ body {
     border-radius: 12px;
     font-weight: bold;
     margin-top: 1em;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .buttons:hover {
@@ -205,6 +209,10 @@ img {
     font-size: 25px;
     color: #a6b7c9; 
     border-radius: 50px;      
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .list-inline-item i:hover {
