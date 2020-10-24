@@ -184,6 +184,21 @@ img {
         font-weight: bold;
     }
 
+    .list-inline-item a i {
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #a6b7c9;
+        border-radius: 3px;
+    }
+
+    .list-inline li {
+        display: inline-block;
+        color: #fafafa;
+        margin-top: 50px;
+        padding: 30px;
+    }
+
     @keyframes overlay-grow {
         from {
             background-color: rgba(0, 0, 0, 0);
@@ -241,20 +256,22 @@ img {
 
 /*---------------------------------------------------Footer*/
 
-.list-inline-item i {
-    width: 35px;
-    height: 35px;
+.list-inline-item a i {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
     color: #a6b7c9;
     border-radius: 3px;
-    margin-top: 100px;
-    font-size: 40px;
+    
 }
 
-.list-inline-item i:hover {
+.list-inline-item a i:hover {
     box-shadow: 5px 8px 10px 10px rgb(222, 234, 241);
 }
-.inline-block {
+
+.list-inline li {
     display: inline-block;
     color: #fafafa;
-    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
 }
