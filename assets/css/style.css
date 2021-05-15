@@ -223,7 +223,10 @@ img {
     color: #fafafa;
     margin-top: 80px;
     padding: 30px;
-    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0;
 }
 
 /*---------------------------------------------------------------------------media queries*/

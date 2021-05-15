@@ -1,3 +1,4 @@
+'use strict';
 /*--------------Code written following the walkthrough tutorial mentioned in the README file*/
 
 /*--------------------------------------------------------------------AudioController Class*/
@@ -179,7 +180,7 @@ class PlanetShift {
        
 /*-------------------------------------------------------------------------------------------------readyState function */
 
-if(document.readyState == "loading") {
+if(document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
     ready();
@@ -216,7 +217,7 @@ span.onclick = function() {
     modal.style.display = "none";
 };
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = "none";   
     }
 };
